@@ -57,6 +57,18 @@ class UnidadeCurricular(models.Model):
     descricao = models.CharField(max_length=200)
     ects = models.IntegerField()
     imagem = models.ImageField(null=True, blank=True)
+    ano = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return self.nome
+
+
+class Competencia(models.Model):
+    nome = models.CharField(max_length=100)
+    nivel = models.IntegerField(
+        validators=[MinValueValidator(0), MaxValueValidator(10)]
+    )
+    descricao = models.CharField(max_length=200)
 
     def __str__(self):
         return self.nome
@@ -69,20 +81,14 @@ class TFC(models.Model):
     orientador = models.ForeignKey(Docente, on_delete=models.CASCADE)
     ano = models.IntegerField()
     destaque = models.BooleanField()
+    licenciatura = models.ForeignKey(Licenciatura, on_delete=models.CASCADE)
+    link = models.URLField()
+    imagem = models.ImageField(null=True, blank=True)
+    tecnologia = models.ManyToManyField(Tecnologia, blank=True)
+    area = models.ManyToManyField(Competencia, blank=True)
 
     def __str__(self):
         return self.titulo
-
-
-class Competencia(models.Model):
-    nome = models.CharField(max_length=100)
-    nivel = models.IntegerField(
-        validators=[MinValueValidator(0), MaxValueValidator(10)]
-    )
-    descricao = models.CharField(max_length=200)
-
-    def __str__(self):
-        return self.nome
 
 
 class Formacao(models.Model):

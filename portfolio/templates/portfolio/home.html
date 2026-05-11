@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Bem-vindo ao meu Portfólio</h2>
+<p>Este site foi desenvolvido no âmbito da disciplina de Laboratório de Aplicações Web.</p>
+
+<h3>Menu Principal</h3>
+<ul>
+    <li><a href="{% url 'tecnologias' %}">Ver Tecnologias</a></li>
+    <li><a href="{% url 'projetos' %}">Ver Projetos</a></li>
+    <li><a href="{% url 'unidades' %}">Unidades Curriculares</a></li>
+    <li><a href="{% url 'tfc' %}">Trabalho Final de Curso (TFC)</a></li>
+    <li><a href="{% url 'competencias' %}">Competências</a></li>
+    <li><a href="{% url 'formacoes' %}">Formações Extra</a></li>
+    <li><a href="{% url 'licenciaturas' %}">Licenciaturas</a></li>
+</ul>
+{% endblock %}

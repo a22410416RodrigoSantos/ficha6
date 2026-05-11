@@ -1,0 +1,28 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Projetos Desenvolvidos</h2>
+
+{% for projeto in projetos %}
+    <article>
+        <h3>{{ projeto.titulo }}</h3>
+        
+        {% if projeto.imagem %}
+            <img src="{{ projeto.imagem.url }}" alt="{{ projeto.titulo }}" width="300">
+        {% endif %}
+        
+        <p><strong>Data:</strong> {{ projeto.data }}</p>
+        <p><strong>Classificação:</strong> {{ projeto.classificacao }}/20</p>
+        <p><strong>Descrição:</strong> {{ projeto.descricao }}</p>
+        <p><strong>Conceitos aplicados:</strong> {{ projeto.conceitos_aplicados }}</p>
+        
+        <p>
+            <a href="{{ projeto.github_repo }}" target="_blank">GitHub</a> | 
+            <a href="{{ projeto.video_demo }}" target="_blank">Ver Demo</a>
+        </p>
+    </article>
+    <hr>
+{% empty %}
+    <p>Não existem projetos registados.</p>
+{% endfor %}
+{% endblock %}

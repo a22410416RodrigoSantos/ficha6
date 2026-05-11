@@ -1,0 +1,33 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Trabalho Final de Curso (TFC)</h2>
+
+{% for tfc in tfcs %}
+    <article>
+        <h3>{{ tfc.titulo }}</h3>
+        
+        {% if tfc.imagem %}
+            <img src="{{ tfc.imagem.url }}" alt="{{ tfc.titulo }}" width="300">
+        {% endif %}
+        
+        <p><strong>Aluno:</strong> {{ tfc.aluno }}</p>
+        <p><strong>Orientador:</strong> {{ tfc.orientador }}</p>
+        <p><strong>Licenciatura:</strong> {{ tfc.licenciatura }}</p>
+        <p><strong>Ano:</strong> {{ tfc.ano }}</p>
+        
+        <p><strong>Resumo:</strong> {{ tfc.resumo }}</p>
+        
+        <p>
+            <a href="{{ tfc.link }}" target="_blank">Ver Projeto Final →</a>
+        </p>
+        
+        <p><strong>Tecnologias:</strong> 
+            {% for tech in tfc.tecnologia.all %}{{ tech.nome }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        </p>
+    </article>
+    <hr>
+{% empty %}
+    <p>Não existe TFC registado.</p>
+{% endfor %}
+{% endblock %}

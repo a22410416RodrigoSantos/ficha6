@@ -1,0 +1,22 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Tecnologias</h2>
+
+{% for tech in tecnologias %}
+    <article>
+        <h3>{{ tech.nome }} <small>({{ tech.tipo }})</small></h3>
+        
+        {% if tech.logo %}
+            <img src="{{ tech.logo.url }}" alt="{{ tech.nome }}" width="120">
+        {% endif %}
+        
+        <p><strong>Classificação:</strong> {{ tech.classificacao }}/10</p>
+        <p><strong>Descrição:</strong> {{ tech.descricao }}</p>
+        <p><a href="{{ tech.website_ofc }}" target="_blank">Website Oficial →</a></p>
+    </article>
+    <hr>
+{% empty %}
+    <p>Não existem tecnologias registadas.</p>
+{% endfor %}
+{% endblock %}

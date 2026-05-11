@@ -1,0 +1,20 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Confirmar Eliminação</h2>
+
+<p>Tem certeza que deseja apagar o projeto <strong>"{{ projeto.titulo }}"</strong>?</p>
+
+<p>Esta ação não pode ser desfeita.</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" style="background-color: #e74c3c; color: white; padding: 10px 20px;">
+        Sim, Apagar Projeto
+    </button>
+    
+    <a href="{% url 'projetos' %}" style="margin-left: 15px; text-decoration: none;">
+        Cancelar
+    </a>
+</form>
+{% endblock %}

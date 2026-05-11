@@ -54,3 +54,37 @@ Entidade 1         | Relação            | Entidade 2         | Cardinalidade  
 | TFC                | usa                | Tecnologia         | N : N                |
 | TFC                | ebvolve            | Unidade Curricular | N : N                |
 | Formacao           | desenvolve         | Competencia        | N : N                |
+
+## FICHA 7
+
+# Making Off - Portfólio Django
+
+## 1. Introdução
+Este projeto consiste no desenvolvimento de um portfólio académico usando o framework Django.
+
+## 2. Dificuldades Encontradas
+- Configuração dos static files (CSS)
+- Migrações quando adicionava campos novos aos modelos
+- Implementação do CRUD
+- Integração do django-markdownify
+
+## 3. Soluções
+- Usei `{% load static %}` e `collectstatic`
+- Aprendi a usar `null=True, blank=True` em campos novos
+- Segui o padrão MVT rigorosamente
+- Usei formulários ModelForm para o CRUD
+
+## 4. Aprendizagens
+- Arquitetura MVT do Django
+- Relacionamentos entre modelos (ForeignKey, ManyToMany)
+- Templates e URLs dinâmicas
+- Gestão de ficheiros estáticos e media
+
+## 5. Tecnologias Usadas
+- **Backend**: Django 5
+- **Frontend**: HTML5, CSS3
+- **Base de Dados**: SQLite
+- **Outros**: Git + GitHub, GitHub Codespaces, Markdownify
+
+## 6. Conclusão
+Foi um ótimo projeto para consolidar conhecimentos de Django.

@@ -3,26 +3,39 @@
 {% block content %}
 <h2>Projetos Desenvolvidos</h2>
 
+<p>
+    <a href="{% url 'projeto_create' %}"
+        style="background-color: #27ae60; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">
+        + Novo Projeto
+    </a>
+</p>
+
 {% for projeto in projetos %}
-    <article>
-        <h3>{{ projeto.titulo }}</h3>
-        
-        {% if projeto.imagem %}
-            <img src="{{ projeto.imagem.url }}" alt="{{ projeto.titulo }}" width="300">
-        {% endif %}
-        
-        <p><strong>Data:</strong> {{ projeto.data }}</p>
-        <p><strong>Classificação:</strong> {{ projeto.classificacao }}/20</p>
-        <p><strong>Descrição:</strong> {{ projeto.descricao }}</p>
-        <p><strong>Conceitos aplicados:</strong> {{ projeto.conceitos_aplicados }}</p>
-        
-        <p>
-            <a href="{{ projeto.github_repo }}" target="_blank">GitHub</a> | 
-            <a href="{{ projeto.video_demo }}" target="_blank">Ver Demo</a>
-        </p>
-    </article>
-    <hr>
+
+<article>
+    <h3>{{ projeto.titulo }}</h3>
+
+    {% if projeto.imagem %}
+    <img src="{{ projeto.imagem.url }}" alt="{{ projeto.titulo }}" width="300">
+    {% endif %}
+
+    <p><strong>Data:</strong> {{ projeto.data }}</p>
+    <p><strong>Classificação:</strong> {{ projeto.classificacao }}/20</p>
+    <p><strong>Descrição:</strong> {{ projeto.descricao }}</p>
+    <p><strong>Conceitos aplicados:</strong> {{ projeto.conceitos_aplicados }}</p>
+
+    <p>
+        <a href="{{ projeto.github_repo }}" target="_blank">GitHub</a> |
+        <a href="{{ projeto.video_demo }}" target="_blank">Ver Demo</a>
+    </p>
+
+    <p>
+        <a href="{% url 'projeto_update' projeto.pk %}">Editar</a> |
+        <a href="{% url 'projeto_delete' projeto.pk %}" style="color: red;">Apagar</a>
+    </p>
+</article>
+<hr>
 {% empty %}
-    <p>Não existem projetos registados.</p>
+<p>Não existem projetos registados.</p>
 {% endfor %}
 {% endblock %}

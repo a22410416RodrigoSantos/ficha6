@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{% if editar %}Editar Competência{% else %}Nova Competência{% endif %}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <br>
+    <button type="submit">
+        {% if editar %}Guardar Alterações{% else %}Criar Competência{% endif %}
+    </button>
+    <a href="{% url 'competencias' %}">Cancelar</a>
+</form>
+{% endblock %}

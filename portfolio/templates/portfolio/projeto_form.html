@@ -1,0 +1,22 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{% if editar %}Editar Projeto{% else %}Novo Projeto{% endif %}</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <table>
+        {{ form.as_table }}
+    </table>
+    
+    <br>
+    <button type="submit" style="padding: 10px 20px; font-size: 16px;">
+        {% if editar %}Guardar Alterações{% else %}Criar Projeto{% endif %}
+    </button>
+    
+    <a href="{% url 'projetos' %}" style="margin-left: 15px; text-decoration: none; color: #555;">
+        Cancelar
+    </a>
+</form>
+{% endblock %}

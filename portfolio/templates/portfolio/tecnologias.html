@@ -3,20 +3,32 @@
 {% block content %}
 <h2>Tecnologias</h2>
 
+<p>
+    <a href="{% url 'tecnologia_create' %}"
+        style="background: #27ae60; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px;">
+        + Nova Tecnologia
+    </a>
+</p>
+
 {% for tech in tecnologias %}
-    <article>
-        <h3>{{ tech.nome }} <small>({{ tech.tipo }})</small></h3>
-        
-        {% if tech.logo %}
-            <img src="{{ tech.logo.url }}" alt="{{ tech.nome }}" width="120">
-        {% endif %}
-        
-        <p><strong>Classificação:</strong> {{ tech.classificacao }}/10</p>
-        <p><strong>Descrição:</strong> {{ tech.descricao }}</p>
-        <p><a href="{{ tech.website_ofc }}" target="_blank">Website Oficial →</a></p>
-    </article>
-    <hr>
+<article>
+    <h3>{{ tech.nome }} <small>({{ tech.tipo }})</small></h3>
+
+    {% if tech.logo %}
+    <img src="{{ tech.logo.url }}" alt="{{ tech.nome }}" width="120">
+    {% endif %}
+
+    <p><strong>Classificação:</strong> {{ tech.classificacao }}/10</p>
+    <p><strong>Descrição:</strong> {{ tech.descricao }}</p>
+    <p><a href="{{ tech.website_ofc }}" target="_blank">Website Oficial →</a></p>
+
+    <p>
+        <a href="{% url 'tecnologia_update' tech.pk %}">Editar</a> |
+        <a href="{% url 'tecnologia_delete' tech.pk %}" style="color: red;">Apagar</a>
+    </p>
+</article>
+<hr>
 {% empty %}
-    <p>Não existem tecnologias registadas.</p>
+<p>Não existem tecnologias registadas.</p>
 {% endfor %}
 {% endblock %}

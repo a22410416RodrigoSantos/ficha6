@@ -3,12 +3,21 @@
 {% block content %}
 <h2>Formações</h2>
 
+<p>
+    <a href="{% url 'formacao_create' %}" class="btn-novo">+ Nova Formação</a>
+</p>
+
 {% for form in formacoes %}
     <article>
         <h3>{{ form.titulo }} <small>({{ form.tipo }})</small></h3>
         <p><strong>Instituição:</strong> {{ form.instituicao }}</p>
         <p><strong>Período:</strong> {{ form.data_inicio }} a {{ form.data_fim }}</p>
         <p>{{ form.descricao }}</p>
+        
+        <p>
+            <a href="{% url 'formacao_update' form.pk %}">Editar</a> |
+            <a href="{% url 'formacao_delete' form.pk %}" class="btn-apagar">Apagar</a>
+        </p>
     </article>
     <hr>
 {% empty %}

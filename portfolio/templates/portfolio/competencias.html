@@ -3,10 +3,19 @@
 {% block content %}
 <h2>Competências</h2>
 
+<p>
+    <a href="{% url 'competencia_create' %}" class="btn-novo">+ Nova Competência</a>
+</p>
+
 {% for comp in competencias %}
     <article>
         <h3>{{ comp.nome }} <small>(Nível {{ comp.nivel }}/10)</small></h3>
         <p>{{ comp.descricao }}</p>
+        
+        <p>
+            <a href="{% url 'competencia_update' comp.pk %}">Editar</a> |
+            <a href="{% url 'competencia_delete' comp.pk %}" class="btn-apagar">Apagar</a>
+        </p>
     </article>
     <hr>
 {% empty %}

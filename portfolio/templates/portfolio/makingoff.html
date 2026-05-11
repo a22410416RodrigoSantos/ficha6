@@ -1,0 +1,12 @@
+{% extends "portfolio/base.html" %}
+{% load markdownify %}
+
+{% block content %}
+<h2>Making Off</h2>
+
+<div class="markdown-content">
+    {{ conteudo_md | markdownify }}
+</div>
+
+<p><small><em>Ficheiro: makingoff.md</em></small></p>
+{% endblock %}

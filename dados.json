@@ -1,0 +1,1226 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-04-12T20:43:36.157Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Engenharia Informática",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-04-15T08:43:45.524Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "Lucio",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-04-15T08:44:11.113Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "Lúcio Studer",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-04-15T08:44:34.441Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "1",
+    "object_repr": "Rodrigo Santos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-04-15T08:44:50.127Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "2",
+    "object_repr": "Marwan Ghunim",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-04-15T08:45:09.602Z",
+    "user": 1,
+    "content_type": 16,
+    "object_id": "3",
+    "object_repr": "Levi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-04-15T08:52:28.673Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "django",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-04-15T08:53:20.795Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "Pedro Perdigão",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-04-15T08:54:29.965Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "Spring Boot",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-05-11T15:16:11.246Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Engenharia Informática",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add licenciatura",
+    "content_type": 10,
+    "codename": "add_licenciatura"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change licenciatura",
+    "content_type": 10,
+    "codename": "change_licenciatura"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete licenciatura",
+    "content_type": 10,
+    "codename": "delete_licenciatura"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view licenciatura",
+    "content_type": 10,
+    "codename": "view_licenciatura"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add competencia",
+    "content_type": 7,
+    "codename": "add_competencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change competencia",
+    "content_type": 7,
+    "codename": "change_competencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete competencia",
+    "content_type": 7,
+    "codename": "delete_competencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view competencia",
+    "content_type": 7,
+    "codename": "view_competencia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add docente",
+    "content_type": 8,
+    "codename": "add_docente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change docente",
+    "content_type": 8,
+    "codename": "change_docente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete docente",
+    "content_type": 8,
+    "codename": "delete_docente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view docente",
+    "content_type": 8,
+    "codename": "view_docente"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add formacao",
+    "content_type": 9,
+    "codename": "add_formacao"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change formacao",
+    "content_type": 9,
+    "codename": "change_formacao"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete formacao",
+    "content_type": 9,
+    "codename": "delete_formacao"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view formacao",
+    "content_type": 9,
+    "codename": "view_formacao"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add making of",
+    "content_type": 11,
+    "codename": "add_makingof"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change making of",
+    "content_type": 11,
+    "codename": "change_makingof"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete making of",
+    "content_type": 11,
+    "codename": "delete_makingof"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view making of",
+    "content_type": 11,
+    "codename": "view_makingof"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add projeto",
+    "content_type": 12,
+    "codename": "add_projeto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change projeto",
+    "content_type": 12,
+    "codename": "change_projeto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete projeto",
+    "content_type": 12,
+    "codename": "delete_projeto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view projeto",
+    "content_type": 12,
+    "codename": "view_projeto"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add tecnologia",
+    "content_type": 13,
+    "codename": "add_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change tecnologia",
+    "content_type": 13,
+    "codename": "change_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete tecnologia",
+    "content_type": 13,
+    "codename": "delete_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view tecnologia",
+    "content_type": 13,
+    "codename": "view_tecnologia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add unidade curricular",
+    "content_type": 15,
+    "codename": "add_unidadecurricular"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change unidade curricular",
+    "content_type": 15,
+    "codename": "change_unidadecurricular"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete unidade curricular",
+    "content_type": 15,
+    "codename": "delete_unidadecurricular"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view unidade curricular",
+    "content_type": 15,
+    "codename": "view_unidadecurricular"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add tfc",
+    "content_type": 14,
+    "codename": "add_tfc"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change tfc",
+    "content_type": 14,
+    "codename": "change_tfc"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete tfc",
+    "content_type": 14,
+    "codename": "delete_tfc"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view tfc",
+    "content_type": 14,
+    "codename": "view_tfc"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add making off",
+    "content_type": 11,
+    "codename": "add_makingoff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change making off",
+    "content_type": 11,
+    "codename": "change_makingoff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete making off",
+    "content_type": 11,
+    "codename": "delete_makingoff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view making off",
+    "content_type": 11,
+    "codename": "view_makingoff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add curso",
+    "content_type": 17,
+    "codename": "add_curso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change curso",
+    "content_type": 17,
+    "codename": "change_curso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete curso",
+    "content_type": 17,
+    "codename": "delete_curso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view curso",
+    "content_type": 17,
+    "codename": "view_curso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add professor",
+    "content_type": 18,
+    "codename": "add_professor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change professor",
+    "content_type": 18,
+    "codename": "change_professor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete professor",
+    "content_type": 18,
+    "codename": "delete_professor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view professor",
+    "content_type": 18,
+    "codename": "view_professor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add aluno",
+    "content_type": 16,
+    "codename": "add_aluno"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change aluno",
+    "content_type": 16,
+    "codename": "change_aluno"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete aluno",
+    "content_type": 16,
+    "codename": "delete_aluno"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view aluno",
+    "content_type": 16,
+    "codename": "view_aluno"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add like",
+    "content_type": 21,
+    "codename": "add_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change like",
+    "content_type": 21,
+    "codename": "change_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete like",
+    "content_type": 21,
+    "codename": "delete_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view like",
+    "content_type": 21,
+    "codename": "view_like"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add comentario",
+    "content_type": 20,
+    "codename": "add_comentario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change comentario",
+    "content_type": 20,
+    "codename": "change_comentario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete comentario",
+    "content_type": 20,
+    "codename": "delete_comentario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view comentario",
+    "content_type": 20,
+    "codename": "view_comentario"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add artigo",
+    "content_type": 19,
+    "codename": "add_artigo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change artigo",
+    "content_type": 19,
+    "codename": "change_artigo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete artigo",
+    "content_type": 19,
+    "codename": "delete_artigo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view artigo",
+    "content_type": 19,
+    "codename": "view_artigo"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$7pzdP1HrVaO8LtNq2RqnwK$uSX6OpGtgYMTnlUm4fewNF0UP1IO9f98yenVm3ARnho=",
+    "last_login": "2026-05-09T14:27:44.183Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-12T16:51:48.801Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "competencia"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "docente"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "formacao"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "licenciatura"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "makingoff"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "projeto"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "tecnologia"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "tfc"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "portfolio",
+    "model": "unidadecurricular"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "escola",
+    "model": "aluno"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "escola",
+    "model": "curso"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "escola",
+    "model": "professor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "artigos",
+    "model": "artigo"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "artigos",
+    "model": "comentario"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "artigos",
+    "model": "like"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "d0ws2fkaxtdcwuuecz9e6nx02j1h3shl",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgLB1cuu8ZyDCDUjU0Ke3KeHdD0oVu_3vvv1WkfStxb3mNs6iLsur0uyXiZ64dyIPqfdG81G2dk-6KPmjT0yL5dT3cv4NCrfTaCNKImRFTGhlygGSc8RRs8CycxFlGAMSbDA4CwhAoOLac_Rk8qM8X8X83sw:1wLiee:FkNePazBWFbnGhVSRhL3BlfzfrtfAMyclH5C7nNVCAI",
+    "expire_date": "2026-05-23T14:27:44.187Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uvgok3z7xac6qxjkzp0juqipmg052sfp",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgLB1cuu8ZyDCDUjU0Ke3KeHdD0oVu_3vvv1WkfStxb3mNs6iLsur0uyXiZ64dyIPqfdG81G2dk-6KPmjT0yL5dT3cv4NCrfTaCNKImRFTGhlygGSc8RRs8CycxFlGAMSbDA4CwhAoOLac_Rk8qM8X8X83sw:1wBy3B:IviaA5aVBg89ONPrqBM5KnLYQUArzvv_ZcPY9W3FeHs",
+    "expire_date": "2026-04-26T16:52:45.081Z"
+  }
+},
+{
+  "model": "portfolio.licenciatura",
+  "pk": 1,
+  "fields": {
+    "nome": "Engenharia Informática",
+    "instituicao": "Lusofona",
+    "semestres": 6,
+    "descricao": "Faculdade muito boa",
+    "ects": 180
+  }
+},
+{
+  "model": "portfolio.licenciatura",
+  "pk": 2,
+  "fields": {
+    "nome": "Engenharia Informática",
+    "instituicao": "Lusofona",
+    "semestres": 6,
+    "descricao": "Faculdade muito boa",
+    "ects": 180
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 2,
+  "fields": {
+    "titulo": "awfawf",
+    "tipo": "awfwaf",
+    "instituicao": "awfawf",
+    "data_inicio": "2026-05-06",
+    "data_fim": "2026-05-20",
+    "descricao": "awdad"
+  }
+},
+{
+  "model": "escola.professor",
+  "pk": 1,
+  "fields": {
+    "nome": "Lúcio Studer",
+    "email": "lucio@gmail.com"
+  }
+},
+{
+  "model": "escola.professor",
+  "pk": 2,
+  "fields": {
+    "nome": "Pedro Perdigão",
+    "email": "lucio@gmail.com"
+  }
+},
+{
+  "model": "escola.aluno",
+  "pk": 1,
+  "fields": {
+    "nome": "Rodrigo Santos",
+    "numero": "a22410416"
+  }
+},
+{
+  "model": "escola.aluno",
+  "pk": 2,
+  "fields": {
+    "nome": "Marwan Ghunim",
+    "numero": "a22406059"
+  }
+},
+{
+  "model": "escola.aluno",
+  "pk": 3,
+  "fields": {
+    "nome": "Levi",
+    "numero": "a22407867"
+  }
+},
+{
+  "model": "escola.curso",
+  "pk": 1,
+  "fields": {
+    "nome": "django",
+    "imagem": "cursos/imagem_2026-04-15_095221516.png",
+    "professor": 1,
+    "alunos": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "escola.curso",
+  "pk": 2,
+  "fields": {
+    "nome": "Spring Boot",
+    "imagem": "cursos/imagem_2026-04-15_095428395.png",
+    "professor": 2,
+    "alunos": [
+      2
+    ]
+  }
+}
+]

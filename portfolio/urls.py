@@ -12,6 +12,7 @@ urlpatterns = [
     path('competencias/', views.competencias_view, name='competencias'),
     path('formacoes/', views.formacoes_view, name='formacoes'),
     path('licenciaturas/', views.licenciaturas_view, name='licenciaturas'),
+    path('makingoff/', views.makingoff_view, name='makingoff'),
     
     # CRUD Projetos
     path('projetos/novo/', views.projeto_create, name='projeto_create'),
@@ -32,4 +33,9 @@ urlpatterns = [
     path('formacoes/novo/', views.formacao_create, name='formacao_create'),
     path('formacoes/<int:pk>/editar/', views.formacao_update, name='formacao_update'),
     path('formacoes/<int:pk>/apagar/', views.formacao_delete, name='formacao_delete'),
+
+    # CRUD Licenciaturas
+    path('licenciaturas/novo/', views.licenciatura_create, name='licenciatura_create'),
+    path('licenciaturas/<int:pk>/editar/', views.licenciatura_update, name='licenciatura_update'),
+    path('licenciaturas/<int:pk>/apagar/', views.licenciatura_delete, name='licenciatura_delete'),
 ]

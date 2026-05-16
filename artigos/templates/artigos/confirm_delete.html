@@ -1,0 +1,12 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Confirmar Eliminação</h2>
+<p>Tem certeza que deseja apagar o artigo <strong>"{{ artigo.titulo }}"</strong>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" style="background-color: #e74c3c; color: white;">Sim, Apagar</button>
+    <a href="{% url 'artigos' %}">Cancelar</a>
+</form>
+{% endblock %}

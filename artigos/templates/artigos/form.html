@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{% if editar %}Editar Artigo{% else %}Novo Artigo{% endif %}</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <br>
+    <button type="submit">
+        {% if editar %}Guardar Alterações{% else %}Publicar Artigo{% endif %}
+    </button>
+    <a href="{% url 'artigos' %}">Cancelar</a>
+</form>
+{% endblock %}

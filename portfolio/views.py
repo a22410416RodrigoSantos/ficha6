@@ -7,7 +7,8 @@ from .forms import (
     ProjetoForm, 
     TecnologiaForm, 
     CompetenciaForm, 
-    FormacaoForm        
+    FormacaoForm,
+    LicenciaturaForm        
 )
 
 # ====================== PÁGINAS DE LISTAGEM ======================
@@ -178,3 +179,35 @@ def formacao_delete(request, pk):
         obj.delete()
         return redirect('formacoes')
     return render(request, 'portfolio/formacao_confirm_delete.html', {'object': obj})
+
+# ====================== CRUD LICENCIATURAS ======================
+
+def licenciatura_create(request):
+    if request.method == 'POST':
+        form = LicenciaturaForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('licenciaturas')
+    else:
+        form = LicenciaturaForm()
+    return render(request, 'portfolio/licenciatura_form.html', {'form': form})
+
+
+def licenciatura_update(request, pk):
+    obj = get_object_or_404(Licenciatura, pk=pk)
+    if request.method == 'POST':
+        form = LicenciaturaForm(request.POST, request.FILES, instance=obj)
+        if form.is_valid():
+            form.save()
+            return redirect('licenciaturas')
+    else:
+        form = LicenciaturaForm(instance=obj)
+    return render(request, 'portfolio/licenciatura_form.html', {'form': form, 'editar': True})
+
+
+def licenciatura_delete(request, pk):
+    obj = get_object_or_404(Licenciatura, pk=pk)
+    if request.method == 'POST':
+        obj.delete()
+        return redirect('licenciaturas')
+    return render(request, 'portfolio/licenciatura_confirm_delete.html', {'object': obj})

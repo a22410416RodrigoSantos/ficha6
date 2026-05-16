@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Rodrigo Santos</title>
+    
     {% load static %}
     <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
 </head>
-
 <body>
     <header>
         <h1>Meu Portfólio</h1>
+        
         <nav>
             <a href="{% url 'home_portfolio' %}">Home</a> |
             <a href="{% url 'tecnologias' %}">Tecnologias</a> |
             <a href="{% url 'projetos' %}">Projetos</a> |
-            <a href="{% url 'unidades' %}">Unidades Curriculares</a> |
+            <a href="{% url 'unidades' %}">Unidades</a> |
             <a href="{% url 'tfc' %}">TFC</a> |
             <a href="{% url 'competencias' %}">Competências</a> |
             <a href="{% url 'formacoes' %}">Formações</a> |
-            <a href="{% url 'licenciaturas' %}">Licenciaturas</a>
+            <a href="{% url 'licenciaturas' %}">Licenciaturas</a> |
+            <a href="{% url 'makingoff' %}">Making Off</a>
+            <a href="{% url 'artigos' %}">Artigos</a>
+            
+            {% if user.is_authenticated %}
+                <span style="margin-left: 20px;">
+                    Olá, <strong>{{ user.username }}</strong> |
+                    <a href="{% url 'logout' %}">Logout</a>
+                </span>
+            {% else %}
+                <span style="margin-left: 20px;">
+                    <a href="{% url 'login' %}">Login</a> |
+                    <a href="{% url 'registo' %}">Registo</a>
+                </span>
+            {% endif %}
         </nav>
     </header>
 
@@ -33,5 +47,4 @@
         <p>&copy; 2026 - Rodrigo Santos</p>
     </footer>
 </body>
-
 </html>

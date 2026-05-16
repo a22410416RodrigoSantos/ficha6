@@ -3,15 +3,22 @@
 {% block content %}
 <h2>Licenciaturas</h2>
 
+<p>
+    <a href="{% url 'licenciatura_create' %}" class="btn-novo">+ Nova Licenciatura</a>
+</p>
+
 {% for lic in licenciaturas %}
     <article>
         <h3>{{ lic.nome }}</h3>
-        
         <p><strong>Instituição:</strong> {{ lic.instituicao }}</p>
         <p><strong>Duração:</strong> {{ lic.semestres }} semestres</p>
-        <p><strong>ECTS Totais:</strong> {{ lic.ects }}</p>
+        <p><strong>ECTS:</strong> {{ lic.ects }}</p>
+        <p>{{ lic.descricao }}</p>
         
-        <p><strong>Descrição:</strong> {{ lic.descricao }}</p>
+        <p>
+            <a href="{% url 'licenciatura_update' lic.pk %}">Editar</a> |
+            <a href="{% url 'licenciatura_delete' lic.pk %}" class="btn-apagar">Apagar</a>
+        </p>
     </article>
     <hr>
 {% empty %}

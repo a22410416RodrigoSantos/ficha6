@@ -1,0 +1,62 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{{ artigo.titulo }}</h2>
+<small>Por {{ artigo.autor }} | {{ artigo.data_criacao|date:"d/m/Y H:i" }}</small>
+
+{% if artigo.fotografia %}
+    <img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}" style="max-width: 100%; border-radius: 8px; margin: 15px 0;">
+{% endif %}
+
+{% if artigo.link_externo %}
+    <p><a href="{{ artigo.link_externo }}" target="_blank">Link externo →</a></p>
+{% endif %}
+
+<div>
+    {{ artigo.texto|linebreaks }}
+</div>
+
+<hr>
+
+<!-- Likes -->
+<p>
+    ❤️ {{ artigo.likes.count }} pessoa(s) gostaram deste artigo
+    {% if user.is_authenticated %}
+        {% if user_liked %}
+            <strong>· Já deste like</strong>
+        {% else %}
+            <a href="#">Dar Like</a>
+        {% endif %}
+    {% endif %}
+</p>
+
+<!-- Comentários -->
+<h3>Comentários ({{ comentarios.count }})</h3>
+
+{% if user.is_authenticated %}
+    <form method="post" action="{% url 'add_comentario' artigo.pk %}">
+        {% csrf_token %}
+        <textarea name="texto" rows="3" placeholder="Escreve um comentário..." style="width: 100%;" required></textarea><br><br>
+        <button type="submit">Publicar Comentário</button>
+    </form>
+{% else %}
+    <p><a href="{% url 'login' %}">Faz login</a> para comentar.</p>
+{% endif %}
+
+{% for comentario in comentarios %}
+    <div style="margin: 15px 0; padding: 10px; background: #f9f9f9; border-radius: 5px;">
+        <strong>{{ comentario.autor }}</strong> 
+        <small>({{ comentario.data|date:"d/m/Y H:i" }})</small><br>
+        {{ comentario.texto|linebreaks }}
+    </div>
+{% empty %}
+    <p>Ainda não há comentários.</p>
+{% endfor %}
+
+<!-- Botões de edição (só para o autor) -->
+{% if user == artigo.autor %}
+    <br>
+    <a href="{% url 'artigo_update' artigo.pk %}">Editar Artigo</a> |
+    <a href="{% url 'artigo_delete' artigo.pk %}" style="color: red;">Apagar Artigo</a>
+{% endif %}
+{% endblock %}

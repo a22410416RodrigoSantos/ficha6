@@ -1,5 +1,5 @@
 from django import forms
-from .models import Projeto, Tecnologia, Competencia, Formacao
+from .models import Licenciatura, Projeto, Tecnologia, Competencia, Formacao
 
 class ProjetoForm(forms.ModelForm):
     class Meta:
@@ -31,4 +31,13 @@ class FormacaoForm(forms.ModelForm):
             'data_inicio': forms.DateInput(attrs={'type': 'date'}),
             'data_fim': forms.DateInput(attrs={'type': 'date'}),
             'descricao': forms.Textarea(attrs={'rows': 3}),
+        }
+
+
+class LicenciaturaForm(forms.ModelForm):
+    class Meta:
+        model = Licenciatura
+        fields = '__all__'
+        widgets = {
+            'descricao': forms.Textarea(attrs={'rows': 4}),
         }

@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Confirmar Eliminação</h2>
+
+<p>Tem certeza que deseja apagar a licenciatura <strong>"{{ object.nome }}"</strong>?</p>
+<p>Esta ação não pode ser desfeita.</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" style="background-color: #e74c3c; color: white; padding: 10px 20px;">
+        Sim, Apagar Licenciatura
+    </button>
+    
+    <a href="{% url 'licenciaturas' %}" style="margin-left: 15px;">Cancelar</a>
+</form>
+{% endblock %}

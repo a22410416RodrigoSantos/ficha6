@@ -9,9 +9,9 @@ def migrar_imagens():
         (Projeto, 'imagem', 'titulo'),
         (Tecnologia, 'logo', 'nome'),
         (Artigo, 'fotografia', 'titulo'),
-        (Licenciatura, 'imagem', 'nome'),      # se tiveres este campo
-        (UnidadeCurricular, 'imagem', 'nome'), # se tiveres este campo
-        (TFC, 'imagem', 'titulo'),             # se tiveres este campo
+        (Licenciatura, 'imagem', 'nome'),      
+        (UnidadeCurricular, 'imagem', 'nome'), 
+        (TFC, 'imagem', 'titulo'),             
     ]
 
     for Model, field_name, title_field in models_to_migrate:
